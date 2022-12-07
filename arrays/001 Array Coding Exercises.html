@@ -1,0 +1,17 @@
+<p><strong>How to solve these coding exercises:</strong></p><ul><li><p>Write your solution in <strong>Go Playground</strong> (<a href="https://play.golang.org/" rel="noopener noreferrer" target="_blank">https://play.golang.org</a>)&nbsp;and then click on the <strong>Run</strong> button.</p></li><li><p>If your solution is not correct, then try to understand the error messages, rewrite the solution, and press the <strong>Run </strong>button again. Repeat this step until you get the correct solution.</p></li><li><p>Each exercise should be solved in Go Playground&nbsp;in <strong>its own file</strong>. Save the URL&nbsp;of each file for future reference or recap. Alternatively, you can write the solution in VSCode and run the program in terminal using: <strong>go run main.go</strong></p></li></ul><p><br></p><p><strong>Coding Exercise #1</strong></p><p><strong>1.</strong> Using the <strong>var</strong> keyword, declare an array called <strong>cities</strong> with<strong> 2 elements</strong> of <strong>type string</strong>. Don't initialize the array.</p><p>Print out the <strong>cities</strong> array and notice the value of its elements.</p><p><strong>2. </strong>Declare an array called <strong>grades</strong> of <strong>type</strong> <strong>[3]float64</strong> and initialize only the first 2 elements using an array literal.</p><p>Print out the grades array and notice the value of its elements.</p><p><strong>3.</strong> Declare an array called <strong>taskDone</strong> using the <strong>ellipsis</strong> operator. The elements are of <strong>type bool. </strong>Print out taskDone.</p><p><strong>4. </strong>Iterate over the array called <strong>cities</strong> using the classical <strong>for loop </strong>syntax and the <strong>len</strong> function and print out element by element.</p><p><strong>5.</strong> Iterate over <strong>grades</strong> using the <strong>range</strong> keyword and print out element by element.</p><p>Are you stuck? Do you want to see the solution for this exercise? Click <a href="https://play.golang.org/p/HcWy8PLqve2" rel="noopener noreferrer" target="_blank">here</a>.</p><p><br></p><p><strong>Coding Exercise #2</strong></p><p>Consider the following array declaration:&nbsp;<code><strong>nums&nbsp;:=&nbsp;[...]int{30,&nbsp;-1,&nbsp;-6,&nbsp;90,&nbsp;-6}</strong></code></p><p>Write a Go program that counts the number of positive even numbers in the array.</p><p>Are you stuck? Do you want to see the solution for this exercise? Click <a href="https://play.golang.org/p/In1xiaYliCK" rel="noopener noreferrer" target="_blank">here</a>.</p><p><br></p><p><strong>Coding Exercise #3</strong></p><p>There are some errors in the following <a href="https://play.golang.org/p/RoxOrla_mLb" rel="noopener noreferrer" target="_blank">Go program</a>. Try to identify the errors, change the code, and run the program without errors.</p><pre class="prettyprint linenums">package&nbsp;main
+
+import&nbsp;"fmt"
+
+func&nbsp;main()&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;myArray&nbsp;:=&nbsp;[3]float64{1.2,&nbsp;5.6}
+
+&nbsp;&nbsp;&nbsp;&nbsp;myArray[2]&nbsp;=&nbsp;6
+
+&nbsp;&nbsp;&nbsp;&nbsp;a&nbsp;:=&nbsp;10
+&nbsp;&nbsp;&nbsp;&nbsp;myArray[0]&nbsp;=&nbsp;a
+
+&nbsp;&nbsp;&nbsp;&nbsp;myArray[3]&nbsp;=&nbsp;10.10
+
+&nbsp;&nbsp;&nbsp;&nbsp;fmt.Println(myArray)
+
+}</pre><p>Are you stuck? Do you want to see the solution for this exercise? Click <a href="https://play.golang.org/p/yL47jLgFiAY" rel="noopener noreferrer" target="_blank">here</a>.</p>
