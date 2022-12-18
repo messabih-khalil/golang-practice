@@ -1,0 +1,26 @@
+<p><strong>How to solve these coding exercises:</strong></p><ul><li><p>Write your solution in <strong>Go Playground</strong> (<a href="https://play.golang.org/" rel="noopener noreferrer" target="_blank">https://play.golang.org</a>)&nbsp;and then click on the <strong>Run</strong> button.</p></li><li><p>If your solution is not correct, then try to understand the error messages, rewrite the solution and press the <strong>Run </strong> button again. Repeat this step until you get the correct solution.</p></li><li><p>Each exercise should be solved in Go Playground&nbsp;in <strong>its own file</strong>. Save the URL&nbsp;of each file for future reference or recap.</p></li><li><p>Alternatively, you can write the solution in VSCode and run the program in terminal using: <strong>go run main.go</strong></p></li></ul><p><br></p><p><strong>Coding Exercise #1</strong></p><p>Consider the following type and interface declaration. </p><pre class="prettyprint linenums">type&nbsp;vehicle&nbsp;interface&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;License()&nbsp;string
+&nbsp;&nbsp;&nbsp;&nbsp;Name()&nbsp;string
+}
+
+type&nbsp;car&nbsp;struct&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;licenceNo&nbsp;string
+&nbsp;&nbsp;&nbsp;&nbsp;brand&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;string
+}</pre><p><strong>1. </strong>Create a Go program where <strong>car</strong> <strong>type implements the vehicle interface.</strong></p><p><strong>2. </strong>Create a variable of type <strong>vehicle</strong> that holds a <strong>car</strong> struct value.</p><p><strong>3.</strong> Call the methods (<strong>Licence</strong> and <strong>Name</strong>)&nbsp;on the interface value declared at step 2</p><p><strong>4. </strong>Run the program without errors.</p><p>Are you stuck? Do you want to see the solution for this exercise? Click <a href="https://play.golang.org/p/WrIXdWhqaS4" rel="noopener noreferrer" target="_blank">here</a>.</p><p><br></p><p><strong>Coding Exercise #2</strong></p><p><strong>1. </strong>Declare a variable called <strong>empty</strong> of <strong>type empty interface. </strong>Print out its type.</p><p><strong>2. </strong>Assign an <strong>int</strong> value to the variable called empty. Print out its type.</p><p><strong>3.</strong> Assign a <strong>float64</strong> value to empty. Print out its type.</p><p><strong>4.</strong> Assign an <strong>int slice</strong> value to empty. Print out its type.</p><p><strong>5.</strong> Add a new int value to the slice (empty variable).</p><p><strong>6. </strong>Print out the slice (empty variable).</p><p>Are you stuck? Do you want to see the solution for this exercise? Click <a href="https://play.golang.org/p/0yLRzyhZpxM" rel="noopener noreferrer" target="_blank">here</a>.</p><p><br></p><p><strong>Coding Exercise #3</strong></p><p>There is an error in the following <a href="https://play.golang.org/p/lxCDu_wDyQs" rel="noopener noreferrer" target="_blank">Go program</a>. Try to identify the error, change the code and run the program without errors.</p><pre class="prettyprint linenums">package&nbsp;main
+
+import&nbsp;"fmt"
+
+type&nbsp;cube&nbsp;struct&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;edge&nbsp;float64
+}
+
+func&nbsp;volume(c&nbsp;cube)&nbsp;float64&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;c.edge&nbsp;*&nbsp;c.edge&nbsp;*&nbsp;c.edge
+}
+
+func&nbsp;main()&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;x&nbsp;interface{}
+&nbsp;&nbsp;&nbsp;&nbsp;x&nbsp;=&nbsp;cube{edge:&nbsp;5}
+&nbsp;&nbsp;&nbsp;&nbsp;v&nbsp;:=&nbsp;volume(x)
+&nbsp;&nbsp;&nbsp;&nbsp;fmt.Printf("Cube&nbsp;Volume:&nbsp;%v\n",&nbsp;v)
+}</pre><p>Are you stuck? Do you want to see the solution for this exercise? Click <a href="https://play.golang.org/p/-c4ws0uRGre" rel="noopener noreferrer" target="_blank">here</a>.</p>

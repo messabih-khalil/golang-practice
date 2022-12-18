@@ -1,0 +1,23 @@
+<p><strong>How to solve these coding exercises:</strong></p><ul><li><p>Write your solution in <strong>Go Playground</strong> (<a href="https://play.golang.org/" rel="noopener noreferrer" target="_blank">https://play.golang.org</a>)&nbsp;and then click on the <strong>Run</strong> button.</p></li><li><p>If your solution is not correct, then try to understand the error messages, rewrite the solution and press the <strong>Run </strong> button again. Repeat this step until you get the correct solution.</p></li><li><p>Each exercise should be solved in Go Playground&nbsp;in <strong>its own file</strong>. Save the URL&nbsp;of each file for future reference or recap.</p></li><li><p>Alternatively, you can write the solution in VSCode and run the program in terminal using: <strong>go run main.go</strong></p></li></ul><p><br></p><p><strong>Coding Exercise #1</strong></p><p><strong>1.</strong> Create a new type called <strong>money</strong>. Its underlying type is <strong>float64</strong>.</p><p><strong>2.</strong> Create a method called <strong>print</strong> that prints out the money value with exact<strong> 2 decimal points.</strong></p><p>Are you stuck? Do you want to see the solution for this exercise? Click <a href="https://play.golang.org/p/Ft-MyMuwp8H" rel="noopener noreferrer" target="_blank">here</a>.</p><p><br></p><p><strong>Coding Exercise #2</strong></p><p>Consider the <strong>money</strong> type declared at<strong> exercise #1</strong>. Create a new method for the money type called <strong>printStr</strong> that returns the <strong>money</strong> value as a string with 2 decimal points.</p><p>Are you stuck? Do you want to see the solution for this exercise? Click <a href="https://play.golang.org/p/ww34lKghjLR" rel="noopener noreferrer" target="_blank">here</a>.</p><p><br></p><p><strong>Coding Exercise #3</strong></p><p><strong>1. </strong>Create a new <strong>struct type called book </strong>with 2 fields:&nbsp;<strong>price</strong> and <strong>title </strong>of type <strong>float64</strong> and <strong>string</strong>.</p><p><strong>2. </strong>Create a method for the newly defined type called <strong>vat</strong> that returns <a href="https://www.investopedia.com/terms/v/valueaddedtax.asp" rel="noopener noreferrer" target="_blank">the vat value</a> if vat is 9%.</p><p><strong>3.</strong> Create a method called <strong>discount</strong> that takes a book value as receiver and decreases the price of the book by 10%.</p><p>Are you stuck? Do you want to see the solution for this exercise? Click <a href="https://play.golang.org/p/LriHS1yGcW_U" rel="noopener noreferrer" target="_blank">here</a>.</p><p><br></p><p><strong>Coding Exercise #4</strong></p><p>A junior Go Programmer has just developed the following <a href="https://play.golang.org/p/kplcKEqubTT" rel="noopener noreferrer" target="_blank">Go Program</a>.&nbsp; &nbsp;You want the change the book's price by calling <strong>changePrice</strong> method. However, you notice that after calling the method the price <strong>is not</strong> changed.</p><p><strong>You task</strong> is to change the code in order for the <strong>changePrice</strong> method to work as expected.</p><pre class="prettyprint linenums">package&nbsp;main
+
+import&nbsp;"fmt"
+
+type&nbsp;book&nbsp;struct&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;title&nbsp;string
+&nbsp;&nbsp;&nbsp;&nbsp;price&nbsp;float64
+}
+
+//&nbsp;method&nbsp;for&nbsp;book&nbsp;type
+func&nbsp;(b&nbsp;book)&nbsp;changePrice(p&nbsp;float64)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;b.price&nbsp;=&nbsp;p
+}
+
+func&nbsp;main()&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;book&nbsp;value
+&nbsp;&nbsp;&nbsp;&nbsp;bestBook&nbsp;:=&nbsp;book{title:&nbsp;"The&nbsp;Trial&nbsp;by&nbsp;Kafka",&nbsp;price:&nbsp;9.9}
+
+&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;changing&nbsp;the&nbsp;price
+&nbsp;&nbsp;&nbsp;&nbsp;bestBook.changePrice(11.99)
+
+&nbsp;&nbsp;&nbsp;&nbsp;fmt.Printf("Book's&nbsp;price:%.2f\n",&nbsp;bestBook.price)&nbsp;//&nbsp;no&nbsp;change
+}</pre><p>Are you stuck? Do you want to see the solution for this exercise? Click <a href="https://play.golang.org/p/w-3uhoIAU0l" rel="noopener noreferrer" target="_blank">here</a>.</p>
